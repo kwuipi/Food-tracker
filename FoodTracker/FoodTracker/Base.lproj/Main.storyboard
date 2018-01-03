@@ -43,9 +43,13 @@
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="dafultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="TZF-zP-7Si">
                                         <rect key="frame" x="0.0" y="80.5" width="320" height="320"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="TZF-zP-7Si" secondAttribute="height" multiplier="1:1" id="Hsv-vy-fGm"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="gk3-27-CYq" appends="YES" id="QJw-Vd-E6j"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -64,9 +68,15 @@
                     <connections>
                         <outlet property="mealNameLabel" destination="SgF-gZ-1Wg" id="kHP-nh-cFz"/>
                         <outlet property="nameTextField" destination="O0u-1r-uqb" id="MpP-YF-mG8"/>
+                        <outlet property="photoImageView" destination="TZF-zP-7Si" id="eXb-E0-pxb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gk3-27-CYq">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="BwS-6j-ZZ1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
         </scene>
