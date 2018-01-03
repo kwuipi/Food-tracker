@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="QuU-MH-cFH">
-                                <rect key="frame" x="0.0" y="40" width="375" height="81"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="QuU-MH-cFH">
+                                <rect key="frame" x="0.0" y="40" width="375" height="201.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgF-gZ-1Wg">
                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="20.5"/>
@@ -27,19 +27,22 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O0u-1r-uqb">
-                                        <rect key="frame" x="0.0" y="20.5" width="375" height="30.5"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O0u-1r-uqb">
+                                        <rect key="frame" x="0.0" y="20.5" width="375" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgb-8B-RCL">
-                                        <rect key="frame" x="0.0" y="51" width="145" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgb-8B-RCL">
+                                        <rect key="frame" x="0.0" y="50.5" width="145" height="30"/>
                                         <state key="normal" title="Set default label text "/>
                                         <connections>
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOi-cM-Hqi"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZF-zP-7Si">
+                                        <rect key="frame" x="0.0" y="80.5" width="240" height="121"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="O0u-1r-uqb" secondAttribute="trailing" id="eh7-5C-8bF"/>
@@ -48,7 +51,6 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QuU-MH-cFH" secondAttribute="bottom" constant="546" id="Hbi-BS-kDI"/>
                             <constraint firstItem="QuU-MH-cFH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="OP5-Dh-k2E"/>
                             <constraint firstItem="QuU-MH-cFH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TFE-dw-SHJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QuU-MH-cFH" secondAttribute="trailing" id="Ywy-kM-zTI"/>
