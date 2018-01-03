@@ -9,6 +9,17 @@
 import UIKit
 
 class RatingControl: UIStackView {
+    
+    //MARK: Properties
+    
+    private var ratingButtons = [UIButton]()
+    
+    var rating = 0 {
+        didSet {
+            updateButtonSelectionStates()
+        }
+    }
+    
     //MARK: Initilization
     
     override init(frame: CGRect) {
@@ -22,7 +33,7 @@ class RatingControl: UIStackView {
     }
     //MARK: Button Action
     
-    func ratingButtonTapped(button: UIButton) {
+    @objc func ratingButtonTapped(button: UIButton) {
         print("Button pressed 👍")
     }
     
@@ -48,3 +59,6 @@ class RatingControl: UIStackView {
 
     
 }
+
+
+
