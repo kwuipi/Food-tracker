@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        nameTextField.delegate = self as! UITextFieldDelegate
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,9 +26,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //MARK: UITextFieldDelegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }
+    
     //MARK: Actions
 
-    @IBOutlet weak var setDefaultLabelText: UIButton! {
+    @IBAction func setDefaultLabelText(_ sender: UIButton) {
         mealNameLabel.text = "Default Text"
     }
 }
