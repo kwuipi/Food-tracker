@@ -41,7 +41,7 @@
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOi-cM-Hqi"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" translatesAutoresizingMaskIntoConstraints="NO" id="TZF-zP-7Si">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="dafultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="TZF-zP-7Si">
                                         <rect key="frame" x="0.0" y="80.5" width="320" height="320"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="TZF-zP-7Si" secondAttribute="height" multiplier="1:1" id="Hsv-vy-fGm"/>
@@ -71,4 +71,7 @@
             <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dafultPhoto" width="320" height="320"/>
+    </resources>
 </document>
