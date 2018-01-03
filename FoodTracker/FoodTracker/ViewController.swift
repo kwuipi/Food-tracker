@@ -32,6 +32,9 @@ class ViewController: UIViewController {
         textField.resignFirstResponder()
         return true
     }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        mealNameLabel.text = textField.text
+    }
     
     //MARK: Actions
 
